@@ -1,0 +1,6 @@
+textarea {
+  resize: none;
+}
+.original-photo {
+  max-height: 300px;
+}

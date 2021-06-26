@@ -1,0 +1,13 @@
+<%- layout("layouts/boilerplate") %>
+<div class="alert alert-danger" role="alert">
+  <h3 class="alert-heading"><%= err.message %> <%= err.status %></h3>
+  <h5 class="mt-3">We couldt find the page you're looking for</h5>
+  <hr />
+  <% if (process.env.NODE_ENV !== "production"){ %>
+  <p><%= err.stack %></p>
+  <% } %>
+  <p class="mb-0">
+    If you're lost try to go to
+    <a href="/campgrounds" style="text-decoration: none"> MAIN PAGE</a>
+  </p>
+</div>
